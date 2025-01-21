@@ -1,0 +1,56 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* White background for the entire body */
+    color: #333;
+    min-height: 100vh; /* Ensure the white area fills the viewport */
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    padding-top: 150px; /* Increased padding to push content below the navbar */
+}
+
+/* Main container (to push footer down) */
+main {
+    flex: 1; /* Makes the main content take up the remaining space */
+}
+
+/* Login form styling */
+form {
+    max-width: 400px;
+    margin: 50px auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006060;
+}

@@ -1,0 +1,119 @@
+*{
+    font-family: Arial, sans-serif;
+}
+/* Wrapper for PartnerShip Content */
+.partner-ship-content {
+    margin: 0 auto;
+    padding: 100px 20px; /* Increased padding to avoid navbar overlap */
+}
+
+/* Scoped Heading Styling */
+.partner-ship-content h1,
+.partner-ship-content h2 {
+    text-align: center;
+    color: #008080; /* Teal color */
+    margin: 40px 0 20px; /* Add space above and below headings */
+}
+
+/* Hero Section Styling */
+.partner-ship-content .custom-hero {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    background-color: #ffffff; /* White background for hero section */
+    padding: 30px; /* Added padding for spacing */
+}
+
+.partner-ship-content .custom-hero-image {
+    max-width: 100%; /* Ensure the image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Title Container Styling */
+.partner-ship-content .atitle-container {
+    text-align: center;
+    margin: 50px auto; /* Increased margin for better spacing */
+}
+
+.partner-ship-content .atitle-container h1 {
+    color: #333; /* Dark gray */
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+.partner-ship-content .custom-image {
+    max-width: 300px; /* Restrict the image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 10px;
+}
+
+/* Paragraph Styling Scoped */
+.partner-ship-content p {
+    max-width: 900px; /* Wider for larger screens */
+    margin: 30px auto; /* Center the paragraph block */
+    padding: 25px; /* Increased padding for better spacing */
+    color: #333; /* Dark gray text */
+    line-height: 1.8; /* Better text spacing */
+    background-color: #ffffff; /* White background for the paragraph */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Ensure space between sections */
+.partner-ship-content section {
+    margin-bottom: 50px; /* Increased margin for more spacing */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet (iPad) */
+@media (max-width: 768px) {
+    .partner-ship-content {
+        padding: 120px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .partner-ship-content h1,
+    .partner-ship-content h2 {
+        margin: 30px 0;
+    }
+
+    .partner-ship-content p {
+        padding: 20px;
+    }
+
+    .partner-ship-content .custom-hero {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .partner-ship-content .custom-image {
+        max-width: 250px; /* Resize images */
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    .partner-ship-content {
+        padding: 140px 10px; /* Adjust padding further for small screens */
+    }
+
+    .partner-ship-content h1,
+    .partner-ship-content h2 {
+        margin: 20px 0;
+    }
+
+    .partner-ship-content p {
+        padding: 15px;
+    }
+
+    .partner-ship-content .custom-hero {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .partner-ship-content .custom-image {
+        max-width: 200px; /* Resize images */
+    }
+}

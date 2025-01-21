@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #008080;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Make the navbar stay at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    padding: 0 15px; /* Space between links */
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Consistent font size */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+nav a:hover {
+    color: darkslategrey;
+}
+
+/* Logo Section */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.navbar-logo img {
+    height: 80px;
+    width: auto;
+}
+
+/* Sidebar for Mobile View */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 128, 128, 0.59);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 10px 15px; /* Add some padding for better click areas */
+}
+
+.menu-button {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav ul {
+        justify-content: flex-end; /* Keep links aligned to the right */
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%; /* Full width for smaller screens */
+    }
+}

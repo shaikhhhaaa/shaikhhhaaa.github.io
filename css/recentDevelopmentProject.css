@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+/* Navbar Spacing */
+body {
+    padding-top: 80px; /* Add padding to the top to avoid navbar overlap */
+}
+
+/* Content Section */
+.content-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Content Item */
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Alternate layout for even items */
+.content-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto; /* Ensure the image is not cut and maintains its aspect ratio */
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature-image:hover {
+    transform: scale(1.05);
+}
+
+/* Text Container */
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.text-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.text-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.text-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.text-container ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .image-container, .text-container {
+        flex: 1 1 100%;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
+    .text-container h1 {
+        font-size: 2rem;
+    }
+
+    .text-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    .text-container h3 {
+        font-size: 1.3rem;
+    }
+}
+/*button*/
+/* Button Styling */
+.custom-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #008080; /* Teal color */
+    color: #ffffff; /* White text */
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px 20px; /* Padding around the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-button:hover {
+    background-color: #005959; /* Darker teal for hover effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Left Align Button */
+.button-container {
+    text-align: left; /* Align the button to the left */
+    margin: 20px 0; /* Add spacing above and below the button */
+}
+
+/* Scoped Button Styling */
+.button-container.left-align .custom-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #008080; /* Teal color */
+    color: #ffffff; /* White text */
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px 20px; /* Padding around the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-container.left-align .custom-button:hover {
+    background-color: #005959; /* Darker teal for hover effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Scoped Alignment */
+.button-container.left-align {
+    text-align: left; /* Align button to the left */
+    margin: 20px 0; /* Add spacing */
+}
+
+

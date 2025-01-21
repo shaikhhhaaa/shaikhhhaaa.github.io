@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    padding-top: 150px; /* Increased padding under the navbar */
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-style: italic;
+    color: #008080;
+    margin-top: 20px; /* Add some space at the top */
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; /* Adjust margin for better spacing */
+    width: 70%;
+    max-width: 1200px; /* Limit the maximum width for better readability */
+}
+
+/* Target only images within the .information div */
+.information img {
+    width: 320px; /* Fixed width */
+    height: 240px; /* Fixed height */
+    border: 3px solid #015959; /* Border for images in .information */
+    border-radius: 10px;
+    margin-right: 20px; /* Add some space between the image and text */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+
+.text-box {
+    color: #008080;
+    flex: 1; /* Allow the text box to take up remaining space */
+}
+
+.text-box p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .information {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .information img {
+        margin-right: 0; /* Remove right margin for centered layout */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .text-box {
+        width: 100%; /* Make the text box take the full width */
+    }
+}
