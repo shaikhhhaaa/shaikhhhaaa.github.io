@@ -1,0 +1,10 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "users" (
+	"id"	INTEGER,
+	"username"	TEXT NOT NULL UNIQUE,
+	"password"	TEXT NOT NULL,
+	"role"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+INSERT INTO "users" VALUES (1,'admin','$2y$10$CMQIExeZldYMi2kVEB8ZSuRd8ODolxAiuz.mr7uuxMTWN2WmGsMFK','manager');
+COMMIT;
